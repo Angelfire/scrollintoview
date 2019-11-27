@@ -1,0 +1,88 @@
+/* Basic CSS Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Demo styles */
+nav {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li:not(:last-child) {
+  margin-right: 40px;
+}
+nav ul li a {
+  display: block;
+  font-size: 18px;
+  letter-spacing: .025em;
+  text-decoration: none;
+  color: var(--c, #000);
+  transition: color .3s ease;
+}
+nav ul li a:hover {
+  --c: #fff;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+section h2 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+section p {
+  background-color: #333;
+  border-radius: 9px;
+  color: #fff;
+  padding: 9px;
+}
+section p a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+#section-1 {
+  background: #ccc;
+}
+
+#section-3 {
+  background: #bbb;
+}
+
+#section-2 {
+  background: #aaa;
+}
